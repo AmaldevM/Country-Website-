@@ -1,0 +1,81 @@
+:root{
+    --rich-black: 210, 30%, 11%;
+    --imperial-red: 357, 96%, 60%;
+    --hono-blue: 203, 94%, 39%;
+    --ash-grey: 180, 19%, 76%;
+    --white-smoke: 90, 12%, 94%;
+  }
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  body{
+    background-color: hsl(var(--white-smoke));
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+  main{
+    padding: 2rem;
+    width: 100%;
+  }
+  a{
+    text-decoration: none;
+  }
+  .card{
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    color: hsl(var(--rich-black));
+    word-wrap: break-word;
+    background-color: hsl(var(--white-smoke));
+    background-clip: border-box;
+    box-shadow: -6px 3px 25px -5px hsl(var(--rich-black));
+    border-radius: 8px;
+  }
+  .card-img{
+    width: 100%;
+  }
+  
+  .card-img{
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .card-body {
+      text-align: center;
+      padding: 1rem 0;
+    }
+    
+    .card-title {
+      color: hsl(var(--hono-blue));
+    }
+    .btn{
+      display: inline-grid;
+      align-content: center;
+      height: 2rem;
+      padding: .5rem;
+      background-color: hsl(var(--hono-blue));
+      color: hsl(var(--white-smoke));
+      border-radius: 5px;
+      margin-top: 1rem;
+    }
+    .countries-container{
+      max-width: 1300px;
+      margin-inline: auto;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      align-content: center;
+      gap: 2rem
+    }
+    .sr-only {
+      border: 0 !important;
+      clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+      -webkit-clip-path: inset(50%) !important;
+        clip-path: inset(50%) !important;  /* 2 */
+      height: 1px !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      padding: 0 !important;
+      position: absolute !important;
+      width: 1px !important;
+      white-space: nowrap !important;            /* 3 */
+    }
